@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lobster&family=Nunito+Sans:ital,wght@1,1000&family=Roboto&family=Sigmar&family=Tilt+Prism&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(224, 223, 215, 0.9219);
+    margin: 0;
+    width: 1200px;
+    margin: 2rem;
+}
+
+h1,
+h2 {
+    color: blue;
+}
+
+img {
+    width: 200px;
+    height: 120px;
+    border: 2px radius #F5F5F5;
+    border-radius: 3px;
+}
