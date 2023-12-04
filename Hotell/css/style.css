@@ -1,24 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lobster&family=Nunito+Sans:ital,wght@1,1000&family=Roboto&family=Sigmar&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lobster&family=Nunito+Sans:ital,wght@1,1000&family=Roboto:wght@400;700&family=Sigmar&family=Tilt+Prism&display=swap');
 
-* {
+*,
+html {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    background-color: rgba(224, 223, 215, 0.9219);
-    margin: 0;
-    width: 1200px;
-    margin: 2rem;
+    background-color: rgb(245, 245, 238);
+    margin: 1rem;
+    border: 2px solid rgb(163, 160, 160);
 }
 
-h1,
+/*Header för alla sidor*/
+
+.header .card {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(36, 36, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+
+    font-size: 128px;
+    color: #e3d9a0;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 4px 4px 5px black;
+}
+
+.logo {
+    margin: 1rem;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    filter: brightness(75%) contrast(60%);
+}
+
+.wrapper>nav {
+    height: 3rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3d9a0;
+    box-shadow: 5px 5px 5px rgb(121, 121, 72);
+}
+
+.wrapper>nav>a {
+    color: rgba(67, 66, 34, 1);
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.wrapper>nav>a:hover {
+    color: rgb(51, 51, 201);
+}
+
+/*Startsida*/
+
+/*Rum*/
+main .container .cardrum {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1rf 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    margin: 1rem;
+}
+
+.container .cardrum>img {
+    width: 40%;
+}
+
+/*Bokningssida*/
 h2 {
-    color: blue;
+    color: rgba(67, 66, 34, 1);
+    font-size: 42px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-img {
-    width: 200px;
-    height: 120px;
-    border: 2px radius #F5F5F5;
-    border-radius: 3px;
+.form {
+    background-color: rgb(216, 219, 225);
+    border: 2px solid rgb(125, 125, 220);
+    margin: 3rem;
+    padding: 3rem;
+    color: rgb(17, 17, 99);
+    text-align: center;
+    box-shadow: inset 8px 8px 24px rgb(135, 135, 229);
+}
+
+/*Footer för alla sidor*/
+.footer {
+    display: flex;
+    background-color: rgb(21, 21, 102);
+}
+
+.footer .row {
+    width: 65%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 1.8em;
+}
+
+.footer .row ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer .row ul li {
+
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+.footer .row-icon {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 0% 1%;
+    padding: 15px;
+    color: white;
+}
+
+footer :hover {
+    color: #e3d9a0;
 }

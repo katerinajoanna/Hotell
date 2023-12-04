@@ -6,22 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Boka</title>
+    <script src="https://kit.fontawesome.com/2da19735be.js" crossorigin="anonymous"></script>
+    <!--för att lägga till icon från Fontawesome-->
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!--lägg till logo-->
-        <img src="" alt="logo">
-        <nav>
-            <a href="startsida.html">Home</a>
-            <a href="hotell.html">Om oss</a>
-            <a href="bokningssida.html">Boka vistelse</a>
-            <a href="rum.html">Rum</a>
-        </nav>
+        <div class="card">
+            <figure class="logo">
+                <img src="logo/bonz.ai-logo-white-symbol.png" alt="logo">
+            </figure>
+            <h1>Bonz.ai</h1>
+        </div>
+
+        <div class="wrapper">
+            <nav>
+                <a href="startsida.html">Home</a>
+                <a href="hotell.html">Om oss</a>
+                <a href="bokningssida.html">Boka vistelse</a>
+                <a href="rum.html">Rum</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Boka vistelse</h1>
+        <h2>Boka vistelse</h2>
+        <div class="form">
+            <form action="hotel@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="imie" required><br><br>
+                <label for="nazwisko">Eftername:</label>
+                <input type="text" id="eftername" name="eftername" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required><br><br>
+                <label for="ankomstdatum">Ankomstdatum:</label>
+                <input type="date" id="ankomstdatum" name="ankomstdatum" required><br><br>
+                <label for="avgångsdatum">Avgångsdatum:</label>
+                <input type="date" id="avgångsdatum" name="avgångsdatum" required><br><br>
+                <label for="vuxna">Vuxna:</label>
+                <input type="number" id="vuxna" name="vuxna" min="1" max="12" required><br><br>
+                <label for="barn">Barn:</label>
+                <input type="number" id="barn" name="barn" min="1" max="12"><br><br>
+                <label for="övrigt">Övrigt:</label>
+                <textarea id="övrigt" name="övrigt" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Skicka">
+            </form>
+        </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <ul>
+                    <li>adress: Skogväg 14<br>Norsjö<br>Sverige 935 31</li>
+                    <li>Telefon: 0046-XXX XX XX</li>
+                    <li>e-mail: hotel@gmail.com</li>
+                </ul>
+            </div>
+            <div class="row-icon">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-youtube fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x  fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
