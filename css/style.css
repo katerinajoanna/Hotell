@@ -153,6 +153,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+    text-align: center;
 }
 
 .cardrum figure>img {
@@ -160,15 +161,33 @@ button:hover {
     margin: 1rem;
 }
 
+/*Hotell sida*/
+.hotell h2 {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hotell p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hotell img {
+    width: 250px;
+    height: 200px;
+}
+
+.hotell {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+
 
 /*Bokningssida*/
-h2 {
-
-    font-size: 42px;
-    font-style: italic;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.form-wrapper h2 {
+    font-size: 45px;
 }
 
 .form-wrapper {
@@ -178,7 +197,6 @@ h2 {
     padding: 3rem;
     color: rgb(17, 17, 99);
     text-align: center;
-    border-radius: 6px;
     box-shadow: inset 8px 8px 24px rgb(135, 135, 229);
     background: linear-gradient(to bottom, rgb(169, 169, 226) 0%, white 50%);
 }
@@ -213,8 +231,9 @@ input {
     border-radius: 10px;
 }
 
-
-/*Hotell sida*/
+.sumbit {
+    padding: 5rem;
+}
 
 
 /*Footer för alla sidor*/
@@ -232,22 +251,20 @@ input {
 }
 
 .footer .row ul {
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
+
 .footer .row ul li {
-    color: white;
     margin: 0px 10px;
     padding: 5px;
 }
 
 .footer .row-icon {
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -258,5 +275,5 @@ input {
 }
 
 footer :hover {
-    color: #e3d9a0;
+    color: rgb(154, 154, 207);
 }

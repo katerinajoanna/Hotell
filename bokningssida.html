@@ -31,8 +31,10 @@
         </section>
     </header>
     <main>
-        <h2>Boka vistelse</h2>
-        <div class="form-wrapper">
+
+        <article class="form-wrapper">
+            <h2>Boka vistelse</h2>
+
             <form class="data">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="imie" required>
@@ -56,13 +58,13 @@
                 <label for="apartments">Apartments:</label>
                 <input type="text" id="apartments" name="apartments" required>
                 <label for="övrigt">Övrigt:</label>
-                <input id="övrigt" name="övrigt" rows="4" cols="50"></textarea>
-            </form>
+                <input id="övrigt" name="övrigt" required>
+                <section class="sumbit">
 
-            <input type="submit" value="Skicka">
-
+                    <input type="submit" value="Skicka">
+                </section>
             </form>
-        </div>
+        </article>
     </main>
 
     <footer>
@@ -70,8 +72,9 @@
             <section class="row">
                 <ul>
                     <li>adress: Skogväg 14<br>Norsjö<br>Sverige 935 31</li>
-                    <li>Telefon: 0046-XXX XX XX</li>
-                    <li>e-mail: hotel@gmail.com</li>
+                    <li>Telefon: 0046-XXX XX XX<br>
+                        <br>e-mail: hotel@gmail.com
+                    </li>
                 </ul>
             </section>
             <section class="row-icon">
