@@ -134,12 +134,6 @@ button:hover {
 }
 
 /*Galeri*/
-.container .cardrum {
-    max-width: 100%;
-    height: auto;
-    display: grid;
-}
-
 
 .punkt li {
     font-size: 30px;
@@ -153,7 +147,15 @@ button:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container .cardrum>img {
+.container .cardrum {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.cardrum figure>img {
     width: 40%;
     margin: 1rem;
 }
