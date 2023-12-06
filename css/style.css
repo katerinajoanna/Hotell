@@ -9,7 +9,7 @@ html {
 body {
     width: 1440px;
     background-color: rgb(203, 214, 230);
-    margin: 1rem;
+    margin: 0 auto;
     border: 2px solid rgb(163, 160, 160);
 }
 
@@ -70,6 +70,12 @@ main {
 
 
 /*Startsida*/
+
+.hero h2 {
+    font-size: 42px;
+    margin: 2rem;
+}
+
 .hero {
     background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 70%);
     display: flex;
@@ -133,12 +139,58 @@ button:hover {
     color: rgb(167, 167, 229);
 }
 
+/*Hotell sida*/
+
+.hotell {
+    margin: 2rem;
+
+    padding: 3rem;
+
+
+}
+
+.hotell h2 {
+    font-size: 40px;
+    padding: 1.2rem;
+}
+
+.hotell p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+
+.hotell img {
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 4px 6px 8px gray;
+}
+
+.faciliteter {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 25px;
+    font-style: normal;
+    list-style: inside;
+
+}
+
 /*Galeri*/
 
 .punkt li {
     font-size: 30px;
     color: rgb(43, 43, 85);
     text-align: center;
+    padding-bottom: 1rem;
+    font-style: normal;
+    list-style: inside;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 42px;
+    text-align: center;
+    padding: 2rem 2rem;
 }
 
 .container p {
@@ -160,29 +212,6 @@ button:hover {
     width: 40%;
     margin: 1rem;
 }
-
-/*Hotell sida*/
-.hotell h2 {
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.hotell p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.hotell img {
-    width: 250px;
-    height: 200px;
-}
-
-.hotell {
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-}
-
 
 
 /*Bokningssida*/
