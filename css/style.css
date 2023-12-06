@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    width: 1440px;
+    max-width: 1440px;
     background-color: rgb(203, 214, 230);
     margin: 0 auto;
     border: 2px solid rgb(163, 160, 160);
@@ -20,13 +20,14 @@ body {
     height: 250px;
     background-color: rgb(36, 36, 162);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 h1 {
 
-    font-size: 128px;
+    font-size: 8.53em;
     color: #e3d9a0;
     font-style: italic;
     font-weight: 700;
@@ -34,17 +35,16 @@ h1 {
 }
 
 .logo {
-    margin: 1rem;
     display: flex;
-    width: 150px;
-    height: 150px;
+    height: 50%;
     filter: brightness(75%) contrast(60%);
 }
 
 .wrapper>nav {
-    height: 3rem;
-    font-size: 20px;
+    height: 3em;
+    font-size: 1.5em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: #e3d9a0;
@@ -184,9 +184,13 @@ button:hover {
 }
 
 .container h2 {
-    font-size: 42px;
+    font-size: 48px;
     text-align: center;
     padding: 2rem 2rem;
+}
+
+.container .article {
+    margin: 3rem;
 }
 
 .container p {
@@ -285,6 +289,7 @@ input {
 
 .footer .row ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
@@ -299,6 +304,7 @@ input {
 .footer .row-icon {
     width: 30%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     font-size: 1.8rem;
