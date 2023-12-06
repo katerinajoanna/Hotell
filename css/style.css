@@ -139,30 +139,42 @@ button:hover {
 /*Hotell sida*/
 
 .hotell {
-    margin: 2rem;
-    padding: 3rem;
+    padding: 1em;
 }
 
 .hotell h2 {
-    font-size: 40px;
+    font-size: 2em;
     padding: 1.2rem;
 }
 
 .hotell p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-style: inherit;
+
 }
 
 .hotell img {
-    width: 250px;
-    height: 200px;
+    width: 100%;
     border-radius: 6px;
     box-shadow: 4px 6px 8px gray;
 }
 
+.reception,
+.area,
+.trips {
+    display: flex;
+
+}
+
+
+
+
+
+
 .faciliteter {
     margin-top: 3rem;
-    font-size: 25px;
+    font-size: 1.2em;
     font-style: normal;
     list-style: square inside;
     font-weight: lighter;
