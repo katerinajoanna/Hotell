@@ -143,10 +143,7 @@ button:hover {
 
 .hotell {
     margin: 2rem;
-
     padding: 3rem;
-
-
 }
 
 .hotell h2 {
@@ -167,12 +164,11 @@ button:hover {
 }
 
 .faciliteter {
-    text-align: center;
     margin-top: 3rem;
     font-size: 25px;
     font-style: normal;
-    list-style: inside;
-
+    list-style: square inside;
+    font-weight: lighter;
 }
 
 /*Galeri*/
@@ -183,8 +179,8 @@ button:hover {
     text-align: center;
     padding-bottom: 1rem;
     font-style: normal;
-    list-style: inside;
     text-align: center;
+    list-style: none;
 }
 
 .container h2 {
@@ -205,6 +201,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+    gap: 3.5rem;
     text-align: center;
 }
 
@@ -213,6 +210,13 @@ button:hover {
     margin: 1rem;
 }
 
+.cardrum figure {
+    transition: transform 0, 3s;
+}
+
+.cardrum figure>img:hover {
+    transform: scale(1.20);
+}
 
 /*Bokningssida*/
 .form-wrapper h2 {
