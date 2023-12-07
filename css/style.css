@@ -130,10 +130,12 @@ button:hover {
     margin: 2em;
     padding: 2em;
     border-radius: 6px;
+    color: rgb(43, 43, 85);
+    text-align: center;
 }
 
 .hotell h2 {
-    font-size: 2em;
+    font-size: 4em;
     padding: 1.2rem;
 }
 
@@ -145,7 +147,7 @@ button:hover {
 }
 
 .hotell img {
-    width: 100%;
+    width: 50%;
     border-radius: 6px;
     box-shadow: 4px 6px 8px gray;
 }
@@ -153,7 +155,7 @@ button:hover {
 .reception,
 .area,
 .trips {
-    display: flex;
+    padding: 3em;
 
 }
 
@@ -163,6 +165,7 @@ button:hover {
     font-style: normal;
     list-style: square inside;
     font-weight: lighter;
+    text-align: start;
 }
 
 /*Galeri*/
@@ -182,7 +185,7 @@ button:hover {
 }
 
 .container h2 {
-    font-size: 2.8em;
+    font-size: 3.2em;
     text-align: center;
     padding: 2rem 2rem;
 }
