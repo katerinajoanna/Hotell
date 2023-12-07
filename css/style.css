@@ -64,9 +64,6 @@ h1 {
     color: rgb(51, 51, 201);
 }
 
-
-
-
 /*Startsida*/
 
 .hero {
@@ -84,10 +81,15 @@ h1 {
 }
 
 .hero h2 {
-    font-size: 3em;
+    font-size: 4em;
     color: rgb(43, 43, 85);
     font-style: italic;
     font-weight: 700;
+}
+
+.hero p {
+    font-size: 2.5em;
+    color: rgb(43, 43, 85);
 }
 
 .hero .info,
@@ -111,11 +113,9 @@ button {
     border: 1px solid gray;
     box-shadow: 3px 3px 3px rgb(42, 42, 176);
     border-radius: 8px;
-    font-size: 1.7em;
+    font-size: 1.4em;
     width: 70%;
-    height: 50%;
 }
-
 
 button:hover {
     background-color: rgb(66, 66, 141);
@@ -125,7 +125,11 @@ button:hover {
 /*Hotell sida*/
 
 .hotell {
-    padding: 1em;
+    max-width: 95%;
+    background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 70%);
+    margin: 2em;
+    padding: 2em;
+    border-radius: 6px;
 }
 
 .hotell h2 {
@@ -153,11 +157,6 @@ button:hover {
 
 }
 
-
-
-
-
-
 .faciliteter {
     margin-top: 3rem;
     font-size: 1.2em;
@@ -167,6 +166,36 @@ button:hover {
 }
 
 /*Galeri*/
+
+.container {
+    max-width: 95%;
+    background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 70%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(24, 24, 54);
+}
+
+.container h2 {
+    font-size: 2.8em;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.container p {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.punkt p {
+    font-size: 1.8em;
+}
 
 .punkt li {
     font-size: 30px;
@@ -178,32 +207,13 @@ button:hover {
     list-style: none;
 }
 
-.container h2 {
-    font-size: 48px;
-    text-align: center;
-    padding: 2rem 2rem;
+.article {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.container .article {
-    margin: 3rem;
-    font-size: 1.8em;
-}
-
-.container p {
-    padding: 1rem;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.container .cardrum {
-    max-width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 3.5rem;
-    font-size: 1.6em;
-    text-align: center;
+article>hr {
+    border-color: rgb(120, 120, 191);
 }
 
 .cardrum figure>img {
