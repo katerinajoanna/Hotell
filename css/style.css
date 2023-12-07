@@ -8,10 +8,13 @@ html {
 
 body {
     max-width: 1440px;
+    min-width: 375px;
     background-color: rgb(203, 214, 230);
-    margin: 0 auto;
     border: 2px solid rgb(163, 160, 160);
+    box-shadow: inset 3px 3px 3px;
+    margin: 0 auto;
 }
+
 
 /*Header för alla sidor*/
 
@@ -27,7 +30,7 @@ body {
 
 h1 {
 
-    font-size: 8.53em;
+    font-size: 8em;
     color: #e3d9a0;
     font-style: italic;
     font-weight: 700;
@@ -61,64 +64,46 @@ h1 {
     color: rgb(51, 51, 201);
 }
 
-main {
-    width: 95%;
-    background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 50%);
-    margin: 2.2rem;
-    border-radius: 6px;
-}
+
 
 
 /*Startsida*/
 
 .hero {
     max-width: 95%;
+    height: 50em;
     background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 70%);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(43, 43, 85);
     font-style: italic;
     font-weight: 700;
 }
 
-
-.hero p {
-    font-size: 2em;
-    color: rgb(43, 43, 85);
-    font-style: italic;
-}
-
-.hero .top,
-.hero .bottom {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-
-
-.hero .cardTop>img {
-    width: 100%;
-    border: 1px solid rgb(124, 124, 62);
-    border-radius: 8px;
-    box-shadow: 4px 6px 8px gray;
-}
-
-
-.hero .cardBottom>img {
+.hero .info,
+.hero .cardTop,
+.hero .cardBottom,
+.hero .button {
     width: 50%;
+}
+
+.hero .cardTop>img,
+.hero .cardBottom>img {
+    width: 70%;
     border: 1px solid rgb(124, 124, 62);
     border-radius: 8px;
     box-shadow: 4px 6px 8px gray;
 }
-
 
 button {
     background-color: rgb(36, 36, 162);
@@ -126,10 +111,11 @@ button {
     border: 1px solid gray;
     box-shadow: 3px 3px 3px rgb(42, 42, 176);
     border-radius: 8px;
-    font-size: 2em;
-    height: 3em;
-    margin-right: 6em;
+    font-size: 1.7em;
+    width: 70%;
+    height: 50%;
 }
+
 
 button:hover {
     background-color: rgb(66, 66, 141);
@@ -200,6 +186,7 @@ button:hover {
 
 .container .article {
     margin: 3rem;
+    font-size: 1.8em;
 }
 
 .container p {
@@ -215,6 +202,7 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 3.5rem;
+    font-size: 1.6em;
     text-align: center;
 }
 
@@ -293,7 +281,7 @@ input {
     margin: 1% 0%;
     padding: 0.6% 0%;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 
 .footer .row ul {
@@ -311,12 +299,12 @@ input {
 }
 
 .footer .row-icon {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin: 0% 1%;
     padding: 15px;
     color: white;
@@ -324,4 +312,18 @@ input {
 
 footer :hover {
     color: rgb(154, 154, 207);
+}
+
+@media all and (min-width:375px) and (max-width:1400px) {
+    body {
+        font-size: 15spx;
+    }
+
+    header,
+    main,
+    footer {
+        float: none;
+        width: auto;
+        margin: 10px;
+    }
 }
