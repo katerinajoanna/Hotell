@@ -24,12 +24,11 @@ body {
     background-color: rgb(36, 36, 162);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 h1 {
-
     font-size: 8em;
     color: #e3d9a0;
     font-style: italic;
@@ -38,9 +37,9 @@ h1 {
 }
 
 .logo {
-    display: flex;
     height: 50%;
     filter: brightness(75%) contrast(60%);
+    display: flex;
 }
 
 .wrapper>nav {
@@ -68,7 +67,7 @@ h1 {
 
 .hero {
     max-width: 95%;
-    height: 50em;
+    height: 70em;
     background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 70%);
     display: flex;
     flex-wrap: wrap;
@@ -126,13 +125,15 @@ button:hover {
 
 .hotell {
     max-width: 95%;
+    height: auto;
     background: linear-gradient(to bottom, rgb(80, 80, 203) 0%, white 70%);
-    margin: 2em;
     padding: 2em;
+    margin: 2.5em;
     border-radius: 6px;
     color: rgb(43, 43, 85);
     text-align: center;
 }
+
 
 .hotell h2 {
     font-size: 4em;
@@ -143,24 +144,37 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-style: inherit;
-
+    text-align: left;
 }
 
-.hotell img {
+.hotell img,
+.trips img {
     width: 50%;
     border-radius: 6px;
     box-shadow: 4px 6px 8px gray;
+    float: left;
+    margin-right: 15px;
+    padding: .5em;
+}
+
+.area img {
+    width: 50%;
+    border-radius: 6px;
+    box-shadow: 4px 6px 8px gray;
+    float: right;
+    margin-left: 15px;
+    padding: .5em;
 }
 
 .reception,
 .area,
 .trips {
-    padding: 3em;
+    padding: 4em;
 
 }
 
 .faciliteter {
-    margin-top: 3rem;
+    margin-top: 8rem;
     font-size: 1.2em;
     font-style: normal;
     list-style: square inside;
@@ -222,6 +236,7 @@ article>hr {
 .cardrum figure>img {
     width: 40%;
     margin: 1rem;
+    box-shadow: 4px 6px 8px rgb(97, 95, 95);
 }
 
 .cardrum figure {
@@ -243,9 +258,9 @@ article>hr {
 .toppen a {
     text-decoration: none;
     color: rgb(51, 51, 171);
-    border: 1px solid rgb(58, 58, 149);
+
     border-radius: 6px;
-    background-color: #f0db64;
+    background-color: #bdc4e3;
 }
 
 /*Bokningssida*/
@@ -343,16 +358,23 @@ footer :hover {
     color: rgb(154, 154, 207);
 }
 
-@media all and (min-width:375px) and (max-width:1400px) {
+/*------*/
+
+@media screen and (min-width:352px) and (max-width:1400px) {
     body {
-        font-size: 15spx;
+        font-size: 15px;
     }
 
-    header,
+    .header h1 {
+        font-size: 80px;
+    }
+
     main,
     footer {
         float: none;
         width: auto;
         margin: 10px;
+        font-size: 10px;
     }
+
 }
