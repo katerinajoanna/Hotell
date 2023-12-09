@@ -80,26 +80,26 @@ h1 {
 }
 
 .hero h2 {
-    font-size: 4em;
+    font-size: 3em;
     color: rgb(43, 43, 85);
     font-style: italic;
     font-weight: 700;
 }
 
 .hero p {
-    font-size: 2.5em;
+    font-size: 2em;
     color: rgb(43, 43, 85);
 }
 
 .hero .info,
-.hero .cardTop,
-.hero .cardBottom,
+.hero .cardtop,
+.hero .cardbottom,
 .hero .button {
     width: 50%;
 }
 
-.hero .cardTop>img,
-.hero .cardBottom>img {
+.hero .cardtop>img,
+.hero .cardbottom>img {
     width: 70%;
     border: 1px solid rgb(124, 124, 62);
     border-radius: 8px;
@@ -376,7 +376,7 @@ footer :hover {
 /**/
 @media screen and (max-width: 910px) {
     .hero {
-        width: 100%;
+
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -387,11 +387,11 @@ footer :hover {
         font-size: 10px;
     }
 
-    .hero .cardTop {
+    .hero .cardtop {
         width: 70%;
     }
 
-    .hero .cardBottom {
+    .hero .cardbottom {
         width: 60%;
     }
 }
