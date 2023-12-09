@@ -9,9 +9,8 @@ html {
 body {
     max-width: 1440px;
     min-width: 375px;
-    background-color: rgb(203, 214, 230);
+    background-color: rgb(179, 182, 236);
     border: 2px solid rgb(163, 160, 160);
-    box-shadow: inset 3px 3px 3px;
     margin: 0 auto;
 }
 
@@ -81,6 +80,7 @@ h1 {
 
 .hero h2 {
     font-size: 3em;
+    padding: 1rem 1rem;
     color: rgb(43, 43, 85);
     font-style: italic;
     font-weight: 700;
@@ -88,6 +88,7 @@ h1 {
 
 .hero p {
     font-size: 2em;
+    padding: 1rem 1rem;
     color: rgb(43, 43, 85);
 }
 
@@ -195,7 +196,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(24, 24, 54);
+    color: rgb(17, 17, 99);
 }
 
 .container h2 {
