@@ -73,7 +73,7 @@ h1 {
     margin: 2em;
     padding: 2em;
     border-radius: 6px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
@@ -107,19 +107,29 @@ h1 {
     box-shadow: 4px 6px 8px gray;
 }
 
-button {
+.btn {
+    font-size: 30px;
+    text-transform: lowercase;
+
     background-color: rgb(36, 36, 162);
-    color: rgb(133, 133, 239);
-    border: 1px solid gray;
-    box-shadow: 3px 3px 3px rgb(42, 42, 176);
-    border-radius: 8px;
-    font-size: 1.4em;
-    width: 70%;
+    border-style: none;
+    padding: 10px 30px;
+    box-shadow: 0 0 0 2px rgb(226, 229, 233), 0 0 0 10px rgb(36, 36, 162);
+    border-radius: 20px;
+    transition: .4s;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color: rgb(66, 66, 141);
+.btn a {
+    text-decoration: none;
+    color: rgb(165, 165, 226);
+}
+
+.btn:hover {
+    background-color: rgb(21, 21, 102);
     color: rgb(167, 167, 229);
+    box-shadow: 0 0 0 3px white, 0 0 0 13px rgb(21, 21, 102);
+    border-radius: 30px;
 }
 
 /*Hotell sida*/
@@ -265,6 +275,7 @@ article>hr {
 }
 
 /*Bokningssida*/
+
 .form-wrapper h2 {
     font-size: 45px;
 }
@@ -316,6 +327,7 @@ input {
 
 
 /*Footer för alla sidor*/
+
 .footer {
     display: flex;
     background-color: rgb(21, 21, 102);
@@ -361,6 +373,39 @@ footer :hover {
 
 /*------*/
 
+@media screen and (min-width:280px) and (max-width: 830px) {
+
+    .hero {
+        margin: 0 auto;
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+
+    .hero .cardtop {
+        width: 90%;
+    }
+
+    .hero .cardbottom {
+        width: 80%;
+    }
+
+    .hero button {
+        font-size: 10px;
+        order: 3;
+    }
+
+    .hero .cardbottom {
+        order: 4;
+    }
+
+    .btn {
+        font-size: 90%;
+    }
+
+}
+
 @media screen and (max-width:570px) {
 
     .header {
@@ -371,13 +416,29 @@ footer :hover {
         font-size: 60px;
     }
 
+    .hotell img {
+        width: 120%;
+    }
 
+    .hotell h2 {
+        font-size: 35px;
+    }
 }
 
-/**/
-@media screen and (max-width: 910px) {
-    .hero {
+@media screen and (min-width:570px) and (max-width:810px) {
 
+    .hotell img {
+        width: 80%;
+    }
+
+    .hotell h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -394,18 +455,6 @@ footer :hover {
 
     .hero .cardbottom {
         width: 60%;
-    }
-}
-
-/**/
-@media screen and (min-width:300px) and (max-width: 830px) {
-
-    .hotell img {
-        width: 100%;
-    }
-
-    .hotell h2 {
-        font-size: 40px;
     }
 }
 
